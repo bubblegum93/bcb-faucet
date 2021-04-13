@@ -1,0 +1,597 @@
+@media screen and (max-width: 1200px){
+    .in-construction {
+        .container,
+        &__title {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1152px){
+    .features-list {
+        justify-content: center;
+    }
+    .description-features {
+        align-items: unset;
+        flex-wrap: wrap;
+        max-width: 380px;
+        width: 47%;
+        margin-right: 30px;
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+        &__text {
+            width: 320px;
+            margin: 31px 15px 0 15px;
+        }
+        &__icon {
+            margin: 30px 18px 0 18px;
+        }
+    }
+    .wallets {
+        padding-bottom: 47px;
+        background-image: url(../images/round.svg), url(../images/bg-blot-4.svg), url(../images/bg-blot-5.svg);
+        background-position: -280px -222px, right -48px, 111% bottom;
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+    .api-wrapp {
+        flex-direction: column;
+        align-items: center;
+        &::before {
+            display: none;
+        }
+        &__mobile-api {
+            margin: 0 0 43px 0;
+        }
+        &__desktop-api {
+            margin-right: 0;
+        }
+    }
+    .mobile-api,
+    .desktop-api  {
+        &__wrapper {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__title {
+            margin: 0 0 16px 0;
+        }
+        &__links-wrapp {
+            margin: 0 auto;
+        }
+    }
+    .personal-area {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .main-header {
+        .container {
+            padding: 0;
+        }
+        &__logo {
+            margin: 34px 30px 0 15px;
+        }
+        &__bitcoin-price {
+            display: none;
+        }
+        .logo {
+            .wrapp {
+                margin-top: 8px;
+            }
+            &__bitcoin-price {
+                display: block;
+            }
+        }
+    }
+    .bitcoin-black {
+        &__title {
+            font-size: 90px;
+            margin: 0;
+        }
+        &__advantages {
+            margin: 0 0 34px 20px;
+        }
+    }
+    .advantages {
+        &__text-top {
+            font-size: 28px;
+            margin: 0 0 11px 0;
+        }
+        &__text-bottom {
+            font-size: 25px;
+        }
+    }
+    .bitcoin-price {
+        &__bitcoin {
+            color: white;
+        }
+    }
+    .active-users {
+        &::before {
+            top: 641px;
+        }
+        .container {
+            padding: 0;
+        }
+    }
+    .statistics {
+        flex-direction: column;
+        background-color: white;
+        margin-bottom: 38px;
+        &::before {
+            display: none;
+        }
+    }
+    .users-active {
+        margin-bottom: 32px;
+        &__title {
+            margin-bottom: 8px;
+        }
+    }
+    .total-paid {
+        background-color: #FBFBFB;
+        padding-top: 28px;
+        &__title {
+            margin-bottom: 8px;
+        }
+    }
+}
+@media screen and (max-width: 864px){
+    body {
+        background-image: url(../images/bg-blot.svg), none;
+        background-position: 418px 66px;
+    }
+    .main-header {
+        .nav-list {
+            max-width: 400px;
+            &__item {
+                margin: 0 20px 10px 0;
+            }
+        }
+    }
+    .reward-platform {
+        padding-bottom: 47px;
+        &::before,
+        &::after {
+            display: none;
+        }
+        .container-wrapp {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        &__bitcoin-black {
+            padding-bottom: 13px;
+        }
+    }
+    .bitcoin-black {
+        max-width: 407px;
+        margin: 0;
+    }
+    .advantages-list {
+        &__item {
+            margin: 0 0 29px 0px;
+        }
+    }
+    .about-account {
+        &::before,
+        &::after {
+            display: none;
+        }
+        .round {
+            top: -400px;
+            left: -46px;
+        }
+    }
+    .personal-area {
+        background-image: none;
+        &__saving {
+            margin: 33px 0 36px 0;
+        }
+    }
+    .fair-game {
+        margin-bottom: 27px;
+        &__title {
+            font-size: 50px;
+            line-height: 40px;
+            margin-bottom: 27px;
+        }
+        &__text {
+            margin-bottom: 27px;
+        }
+    }
+    .in-construction {
+        &__title {
+            margin: 30px 0 19px 0;
+            line-height: 148.9%;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
+        &__points {
+            margin-bottom: 57px;
+        }
+    }
+}
+@media screen and (max-width: 842px) {
+    .personal-area {
+        &__block {
+            min-height: 351px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 352px;
+                left: -200px;
+                right: 0;
+                bottom: 0;
+                margin: 0 auto;
+                background-image: url(../images/bg-blot-6.svg);
+                background-repeat: no-repeat;
+                width: 715px;
+                height: 180px;
+                z-index: -1;
+            }
+        }
+    }
+    .table {
+        border-top: 1px solid white;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        margin-bottom: 47px;
+        td {
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .wallets {
+        background-image: none, url(../images/bg-blot-4.svg), url(../images/bg-blot-5.svg);
+        background-position: -280px -222px, right -48px, 120% bottom;
+    }
+}
+@media screen and (max-width: 764px){
+    .features {
+        &__title {
+            padding-top: 26px;
+            margin: 0 0 26px 0;
+        }
+        &__features-list {
+            margin-bottom: 40px;
+        }
+    }
+    .features-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description-features {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px;
+        &__icon {
+            margin: 30px 23px 0 35px;
+        }
+    }
+}
+@media screen and (max-width: 720px){
+    .main-header {
+        &__logo {
+            margin: 15px 30px 15px 15px;
+        }
+        .nav-list {
+            display: none;
+            position: fixed;
+            z-index: 2;
+
+            max-width: 100vw;
+            background:#0F111C;
+            text-align: center;
+            margin: 0;
+            padding-top: 32px;
+            &__item {
+                margin: 0 0 48px 0;
+            }
+        }
+        .burger {
+            top: 15px;
+            right: 30px;
+            &.active-menu {
+                display: block;
+            }
+        }
+        .user-button {
+            position: absolute;
+            top: 27px;
+            right: 30px;
+            cursor: pointer;
+            &.active-menu {
+                display: block;
+                &.active {
+                    position: fixed;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    .saving {
+        a {
+            margin-right: 15px;
+        }
+    }
+    .fair-game {
+        &__text {
+            font-size: 17px;
+        }
+    }
+    .in-construction {
+        &__title {
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (max-width: 540px){
+    .reward-platform {
+        background-image: url(../images/round.svg);
+        background-position: 47% 22px;
+        background-repeat: no-repeat;
+    }
+    .about-account {
+        .round {
+            display: none;
+        }
+    }
+    .active-users {
+        &::before {
+            display: none;
+        }
+    }
+    .users-active,
+    .total-paid {
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .numbers {
+            font-size: 50px;
+            line-height: 59px;
+        }
+    }
+    .personal-area {
+        &__block {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .fair-game {
+        &__points {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .reward-platform {
+        background-position: 47% 22px;
+    }
+    .button {
+        width: 260px;
+        font-size: 19px;
+        line-height: 22%;
+    }
+    .title {
+        font-size: 50px;
+        line-height: 59px;
+    }
+    .bitcoin-black {
+        max-width: 274px;
+        &__title {
+            font-size: 58px;
+            line-height: 68px;
+        }
+        &__advantages {
+            margin-left: 0;
+        }
+    }
+    .advantages {
+        &__text-top {
+            font-size: 18px;
+            line-height: 21px;
+        }
+        &__text-bottom {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+    .advantages-list {
+        font-size: 14px;
+        line-height: 16px;
+        &__item {
+            padding: 0 0 20px 38px;
+            margin: 0 0 0px 0px;
+            background-position: 0px 3px;
+        }
+    }
+    .tabs {
+        flex-direction: column;
+        .active {
+            color: #0094FF;
+        }
+        &__account-creation {
+            width: auto;
+            padding: 28px 0 23px 0;
+            background-color: white;
+        }
+        &__log-in {
+            width: auto;
+            color: #393C4E;
+            font-family: 'Roboto-Regular';
+            text-decoration: underline;
+            background-color: white;
+            padding: 0;
+        }
+    }
+    .account-creation,
+    .log-in {
+        label {
+            display: none;
+        }
+        input {
+            margin: 0 auto;
+        }
+        .download {
+            width: 214px;
+            margin-bottom: 20px;
+        }
+        &__bcb-address {
+            margin-bottom: 22px;
+        }
+        &__password {
+            margin-bottom: 35px;
+        }
+        &__button {
+            width: 229px;
+        }
+    }
+    .description-features {
+        padding-bottom: 21px;
+        &__title {
+            max-width: 240px;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 21px 20px 0 0;
+        }
+        &__icon {
+            width: 40px;
+            height: 40px;
+            margin: 21px 21px 0 19px;
+        }
+        &__text {
+            margin-top: 19px;
+        }
+    }
+    .wallets {
+        background-position: -280px -222px, 14% -48px, 277px bottom;
+        .container {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 4px;
+                top: 74px;
+    
+                background-image: url(../images/many-points.svg);
+                width: 28px;
+                height: 38px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 4px;
+                top: 74px;
+    
+                background-image: url(../images/many-points.svg);
+                width: 28px;
+                height: 38px;
+            }
+        }
+        &__title-wrapp {
+            margin-bottom: 36px;
+        }
+        &__title {
+            padding-top: 64px;
+            margin-bottom: 0;
+        }
+        &__title-icon {
+            display: none;
+        }
+    }
+    .mobile-api,
+    .desktop-api {
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__links-wrapp {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .saving {
+        flex-direction: column;
+        align-items: center;
+        a {
+            margin: 0 0 30px 0;
+        }
+    }
+    .table {
+        &__title {
+            font-size: 16px;
+            line-height: 135.7%;
+        }
+        td {
+            font-size: 16px;
+            line-height: 296%;
+        }
+    }
+    .in-construction {
+        padding-bottom: 95px;
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            span {
+                font-size: 70px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    .main-header {
+        .burger {
+            top: 8px;
+        }
+        .user-button {
+            top: 22px;
+        }
+    }
+    .logo {
+        &__svg-bitcoin {
+            width: 40px;
+            height: 40px;
+            margin-right: 0;
+        }
+        &__name-company {
+            width: 107px;
+            height: 14px;
+        }
+        .bitcoin-price {
+            font-size: 10px;
+            font-family: Roboto-Light;
+        }
+    }
+    .about-account {
+        width: 260px;
+    }
+    .description-features {
+        width: 260px;
+    }
+    .wallets {
+        background-position: -280px -222px, -80px -48px, 215px bottom;
+    }
+    .fair-game {
+        text-align: start;
+        &__text {
+            text-align: start;
+        }
+    }
+}

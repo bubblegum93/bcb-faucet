@@ -1,0 +1,130 @@
+/* base styles*/
+*,*:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+}
+*,body,html {-webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    min-width: 320px;
+    font-family: 'Roboto-Regular', arial,sans-serif;
+    background:#0F111C;
+    background-image: url(../images/bg-blot.svg), url(../images/bg-blot-2.svg);
+    background-repeat: no-repeat;
+    background-position: 38px -188px, 790px 298px;
+    color:#3d3d3d;
+    position: relative;
+    font-size: 16px;
+    line-height: 1;
+}
+img {
+    vertical-align: bottom;
+    border: 0;
+    max-width: 100%;
+}
+
+/* wraps styling*/
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+
+    &:after {
+        content: "";
+        clear: both;
+        font-size: 1px;
+        line-height: 1px;
+        height: 0;
+        overflow: hidden;
+        display: block;
+    }
+}
+/* /wraps styling*/
+
+.footer_placeholder {
+    height: 200px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+input, textarea{
+    &::-webkit-input-placeholder {
+        color:#212121;
+    }
+    &:-moz-placeholder {
+        color:#212121;
+        opacity: 1;
+    }
+    &::-moz-placeholder {
+        color:#212121;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color:#212121;
+    }
+}
+
+/*fonts*/
+
+@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
+    $filepath: "../fonts/" + $file;
+    @font-face {
+        font-family: quote($style-name);
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'),
+        url($filepath + ".woff") format('woff'),
+        url($filepath + ".ttf")  format('truetype'),
+        url($filepath + ".svg#" + $style-name + "") format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+//  example->    @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+@include font-face('Roboto-Light', 'Roboto-Light', 300);
+@include font-face('Roboto-Regular', 'Roboto-Regular', 400);
+@include font-face('Roboto-Medium', 'Roboto-Medium', 500);
+@include font-face('Roboto-Bold', 'Roboto-Bold', 700);
+/*/fonts*/
+
+/* /base styles */
+
+/* styles for wp-admin panel */
+body{
+    &.customize-support {
+        .wp-panel-show{top:32px;} //fixed elements (if their has top:0) must has class .wp-panel-show
+    }
+}
+@media screen and (max-width: 782px){
+
+    body{
+        &.customize-support {
+            .wp-panel-show {
+                top: 46px;
+            }
+        }
+    }
+
+    #wpadminbar {
+        position: fixed!important;
+    }
+
+}
+ /* /styles for wp-admin panel */
+
+/*End Layout*/
+
