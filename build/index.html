@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="1280"/>
+    <meta name="HandheldFriendly" content="false"/>
+    <meta name="format-detection" content="telephone=no">
+
+
+    <link rel="stylesheet" href="styles/plagins.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="container-wrapp">
+                <div class="main-header__logo logo">
+                    <a class="logo__link" href="#">
+                        <svg class="logo__svg-bitcoin" width="54" height="54"><use xlink:href="images/sprite.svg#bitcoin-logo"></use></svg>
+                        <div class="wrapp">
+                            <svg class="logo__name-company" width="186" height="22"><use xlink:href="images/sprite.svg#name-company"></use></svg>
+                            <div class="logo__bitcoin-price bitcoin-price">
+                                <strong><span class="bitcoin-price__bitcoin">1 Bitcoin Black</span> = $<span class="bitcoin-price__price">0.01</span></strong>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-list before-logged-in active-list">
+                    <li class="nav-list__item"><a href="#wallets-title">Wallets</a></li>
+                    <li class="nav-list__item"><a href="#features-title">Features</a></li>
+                    <li class="nav-list__item"><a href="#about-account" class="sign-up">Sign up</a></li>
+                    <li class="nav-list__item"><a href="#about-account" class="log">Login</a></li>
+                </ul>
+                <ul class="nav-list after-logged-in">
+                    <li class="nav-list__item"><a href="#">Free bcb</a></li>
+                    <li class="nav-list__item"><a href="#">Lottery</a></li>
+                    <li class="nav-list__item"><a href="#">Refer</a></li>
+                    <li class="nav-list__item"><a class="profile" href="#"><svg width="20" height="20"><use xlink:href="images/sprite.svg#user"></use></svg>Profile</a></li>
+                </ul>
+                <div class="main-header__bitcoin-price bitcoin-price">
+                    <strong><span class="bitcoin-price__bitcoin">1 Bitcoin Black</span> = $<span class="bitcoin-price__price">0.01</span></strong>
+                </div>
+                <div class="burger active-menu">
+                    <div class="burger-brick"></div>
+                    <div class="burger-brick middle"></div>
+                    <div class="burger-brick"></div>
+                </div>
+                <svg class="user-button" width="30" height="30"><use xlink:href="images/sprite.svg#user"></use></svg>
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        <section class="reward-platform">
+            <div class="container">
+                <div class="container-wrapp">
+                    <div class="reward-platform__bitcoin-black bitcoin-black">
+                        <h1 class="bitcoin-black__title">Your №1</h1>
+                        <div class="bitcoin-black__advantages advantages">
+                            <p class="advantages__text-top">Bitcoin Black Reward Platform</p>
+                            <p class="advantages__text-bottom"><span class="colored-text">Win</span> free bitcoins black <span class="colored-text">every hour!</span></p>
+                        </div>
+                        <ul class="advantages-list">
+                            <li class="advantages-list__item">Win up to $100 in free bitcoins black</li>
+                            <li class="advantages-list__item">Dayly Lotteries with good chances</li>
+                            <li class="advantages-list__item">Weekly jackpot</li>
+                            <li class="advantages-list__item">50% referral commitions for life</li>
+                        </ul>
+                    </div>
+                    <div class="about-account" id="about-account">
+                        <svg class="round" width="501" height="502"><use xlink:href="images/sprite.svg#round"></use></svg>
+                        <div class="tabs">
+                            <p class="tabs__item tabs__account-creation active"><span class="colored-text">Create</span> an account</p>
+                            <p class="tabs__item tabs__log-in">Log in</p>
+                        </div>
+                        <form class="account-creation tabs-shape active" action="" name="account-creation">
+                            <div class="account-creation__user-name">
+                                <label for="user-name"><svg width="20" height="20"><use xlink:href="images/sprite.svg#user-account"></use></svg></label>
+                                <input id="user-name" type="text" name="user-name" placeholder="Username">
+                            </div>
+                            <div class="account-creation__email email">
+                                <label for="email"><svg width="20" height="20"><use xlink:href="images/sprite.svg#mail"></use></svg></label>
+                                <input id="email" type="email" name="email" placeholder="E-mail address">
+                            </div>
+                            <div class="account-creation__bcb-address">
+                                <label for="bcb-address"><svg width="20" height="20"><use xlink:href="images/sprite.svg#bcb-address"></use></svg></label>
+                                <input id="bcb-address" type="text" name="bsb-address" placeholder="bcb address">
+                            </div>
+                            <div class="download">
+                                <a class="download__bcb-wallet" href="#wallets-title">Press here</a>
+                                <p class="download__text">to download your personal BCB wallet</p>
+                            </div>
+                            <div class="account-creation__password password">
+                                <label for="password"><svg width="20" height="20"><use xlink:href="images/sprite.svg#password"></use></svg></label>
+                                <input id="password" type="password" name="password" placeholder="Password">
+                            </div>
+                            <button class="account-creation__button button" type="submit">Create</button>
+                        </form>
+                        <form class="log-in tabs-shape" action="" name="login">
+                            <div class="log-in__email email">
+                                <label for="email-login"><svg width="20" height="20"><use xlink:href="images/sprite.svg#mail"></use></svg></label>
+                                <input id="email-login" type="email" name="email" placeholder="E-mail address">
+                            </div>
+                            <div class="log-in__password password">
+                                <label for="password-login"><svg width="20" height="20"><use xlink:href="images/sprite.svg#password"></use></svg></label>
+                                <input id="password-login" type="password" name="password" placeholder="Password">
+                            </div>
+                            <button class="log-in__button button" type="submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2 class="features__title title" id="features-title">Features</h2>
+                <div class="features__features-list features-list">
+                    <div class="features-list__item description-features">
+                        <div class="description-features__wrapp">
+                            <svg class="description-features__icon" width="60" height="60"><use xlink:href="images/sprite.svg#jackpot"></use></svg>
+                            <h4 class="description-features__title">Free bitcoins black every hour</h4>
+                        </div>
+                        <p class="description-features__text">Try your luck every hour playing our simple game and you could win up to $100 in free bitcoins black!</p>
+                    </div>
+                    <div class="features-list__item description-features">
+                        <div class="description-features__wrapp">
+                            <svg class="description-features__icon" width="60" height="60"><use xlink:href="images/sprite.svg#dollar"></use></svg>
+                            <h4 class="description-features__title">Dayly lotteries with good chances</h4>
+                        </div>
+                        <p class="description-features__text">Winning chance of big prizes <br> 1 : 100!</p>
+                    </div>
+                    <div class="features-list__item description-features">
+                        <div class="description-features__wrapp">
+                            <svg class="description-features__icon" width="60" height="60"><use xlink:href="images/sprite.svg#open-box"></use></svg>
+                            <h4 class="description-features__title">Weekly Jackpot</h4>
+                        </div>
+                        <p class="description-features__text">Participate in Weekly Jackpot contest!</p>
+                    </div>
+                    <div class="features-list__item description-features">
+                        <div class="description-features__wrapp">
+                            <svg class="description-features__icon" width="60" height="60"><use xlink:href="images/sprite.svg#exchange"></use></svg>
+                            <h4 class="description-features__title">Generouse referral program</h4>
+                        </div>
+                        <p class="description-features__text">Refer your friends after singing up and get 50% of free bitcoins black program!</p>
+                    </div>
+                </div>
+                <a class="features__button button" href="#about-account">Play now</a>
+            </div>
+        </section>
+        <section class="wallets">
+            <div class="container">
+               <div class="wallets__title-wrapp">
+                    <h2 class="wallets__title title" id="wallets-title">Wallets</h2>
+                    <svg class="wallets__title-icon" width="236" height="38"><use xlink:href="images/sprite.svg#many-points"></use></svg>
+               </div>
+               <div class="wallets__api-wrapp api-wrapp">
+                   <div class="api-wrapp__mobile-api mobile-api">
+                    <div class="mobile-api__wrapper">
+                        <h3 class="mobile-api__title">Mobile</h3>
+                        <p>User friendly mobile wallets. Send money as simple as sending a text message.</p>
+                    </div>
+                    <div class="mobile-api__links-wrapp">
+                        <a class="link-api" href="#">
+                            <svg class="link-api__icon" width="25" height="30"><use xlink:href="images/sprite.svg#apple"></use></svg>
+                            <p class="link-api__text"><span>Download on the</span>App Store</p>
+                        </a>
+                        <a class="link-api" href="#">
+                            <svg class="link-api__icon" width="30" height="30"><use xlink:href="images/sprite.svg#android"></use></svg>
+                            <p class="link-api__text"><span>Download APK</span>Android</p>
+                        </a>
+                    </div>
+                   </div>
+                   <div class="api-wrapp__desktop-api desktop-api">
+                       <div class="desktop-api__wrapper">
+                            <h3 class="desktop-api__title">Desktop</h3>
+                            <p>A full node wallet to contribute to the decentralization of the Bitcoin Black network</p>
+                       </div>
+                       <div class="desktop-api__links-wrapp">
+                        <a class="link-api" href="#">
+                            <svg class="link-api__icon" width="30" height="30"><use xlink:href="images/sprite.svg#windows"></use></svg>
+                            <p class="link-api__text">Windows</p>
+                        </a>
+                        <a class="link-api" href="#">
+                            <svg class="link-api__icon" width="25" height="30"><use xlink:href="images/sprite.svg#apple"></use></svg>
+                            <p class="link-api__text">Mac os</p>
+                        </a>
+                        <a class="link-api" href="#">
+                            <svg class="link-api__icon" width="29" height="30"><use xlink:href="images/sprite.svg#linux"></use></svg>
+                            <p class="link-api__text">Linux</p>
+                        </a>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+        <section class="active-users">
+            <div class="container">
+                <div class="statistics">
+                    <div class="users-active">
+                        <h3 class="users-active__title">Active Users</h3>
+                        <strong class="users-active__people numbers">4 657 890</strong>
+                    </div>
+                    <div class="total-paid">
+                        <h3 class="total-paid__title">Total Paid (BCB)</h3>
+                        <strong class="total-paid__amount numbers">44 677 120</strong>
+                    </div>
+                </div>
+                <a class="active-users__button button" href="#about-account">Play now</a>
+            </div>
+        </section>
+
+    </div>
+    <!-- /MAIN -->
+
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer class="footer">
+        <div class="contacts">
+            <div class="contacts__social-network social-network">
+                <a class="social-network__link" href="#"><svg width="50" height="50"><use xlink:href="images/sprite.svg#instagram"></use></svg></a>
+                <a class="social-network__link" href="#"><svg width="50" height="50"><use xlink:href="images/sprite.svg#twitter"></use></svg></a>
+                <a class="social-network__link" href="#"><svg width="50" height="50"><use xlink:href="images/sprite.svg#facebook"></use></svg></a>
+            </div>
+            <p class="social-network__copyright">© 2021 BCBfaucet - All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+</div>
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+
+
+<script src="scripts/main.js"></script>
+
+<!-- /SCRIPTS -->
+
+</body>
+</html>
